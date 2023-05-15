@@ -167,7 +167,7 @@ class V2 {
 
     // Draw a point at the current coordinates scaled by the given factor
   plot(s) {
-    customCircle((1 + this.x) / 2, (1 + this.y) / 2, s * scaling);
+    customCircle((1 + this.x) / 2, (1 + this.y) / 6, s * scaling);
   }
 
   // Translate the current point by the given deltas
@@ -180,5 +180,3 @@ class V2 {
     return Math.sqrt(Math.pow((this.x - v1.x), 2) + Math.pow((this.y - v1.y), 2));
   }
 }
-
-
